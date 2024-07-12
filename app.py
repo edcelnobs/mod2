@@ -9,7 +9,7 @@ st.header('Potato Image Disease Classification Model')
 model = load_model('modelp.keras')
 
 # Define the categories
-name = text.Label['Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy']
+data_cat = ['Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy']
 img_height, img_width = 180, 180
 
 # Upload an image using Streamlit file uploader
@@ -29,5 +29,5 @@ if image is not None:
     st.image(image, caption='Uploaded Image', use_column_width=True)
 
     # Display the prediction result
-    st.write('Potato Disease Predicted: ' + mane[np.argmax(score)])
+    st.write('Potato Disease Predicted: ' + data_cat[np.argmax(score)])
     st.write(f'With accuracy: {np.max(score) * 100:.2f}%')
