@@ -34,6 +34,7 @@ jobs:
         pip install numpy
         pip install pandas
         pip install matplotlib
+        pip install streamlit
     - name: Build package
       run: python -m build
     - name: Publish package
