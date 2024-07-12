@@ -6,8 +6,7 @@ import numpy as np
 st.header('Potato Image Disease Classification Model')
 
 # Load the pre-trained Keras model
-model_path = 'modelp.keras'
-model = load_model(model_path)
+model = load_model('modelp.keras')
 
 # Define the categories
 data_cat = ['Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy']
