@@ -3,5 +3,5 @@ streamlit
 numpy
 pandas
 flask
-tensorflow-cpu
-gunicorn
+
+
